@@ -11,4 +11,7 @@ import KIF
 
 class noteItUITests: KIFTestCase {
     
+    func testAreAnyTestsWritten() {
+        XCTFail("You should write some KIF tests.");
+    }
 }
