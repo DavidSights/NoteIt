@@ -1,0 +1,43 @@
+PODS:
+  - ILGDynamicObjC/ILGClasses (0.1.1)
+  - ILGHttpConstants (1.0.1)
+  - KIF (3.3.0):
+    - KIF/Core (= 3.3.0)
+  - KIF/Core (3.3.0)
+  - VOKBenkode (0.2.1)
+  - VOKMockUrlProtocol (2.1.0):
+    - ILGHttpConstants (~> 1.0.0)
+    - VOKBenkode (~> 0.2.1)
+  - Vokoder (1.3.3):
+    - Vokoder/Core (= 1.3.3)
+    - Vokoder/DataSources (= 1.3.3)
+  - Vokoder/Core (1.3.3):
+    - ILGDynamicObjC/ILGClasses (~> 0.1.1)
+  - Vokoder/DataSources (1.3.3):
+    - Vokoder/Core
+    - Vokoder/DataSources/Collection (= 1.3.3)
+    - Vokoder/DataSources/FetchedResults (= 1.3.3)
+    - Vokoder/DataSources/PagingFetchedResults (= 1.3.3)
+  - Vokoder/DataSources/Collection (1.3.3):
+    - Vokoder/Core
+    - Vokoder/DataSources/FetchedResults
+  - Vokoder/DataSources/FetchedResults (1.3.3):
+    - Vokoder/Core
+  - Vokoder/DataSources/PagingFetchedResults (1.3.3):
+    - Vokoder/Core
+    - Vokoder/DataSources/FetchedResults
+
+DEPENDENCIES:
+  - KIF
+  - VOKMockUrlProtocol
+  - Vokoder
+
+SPEC CHECKSUMS:
+  ILGDynamicObjC: 63443567f8ce851067ea3070d3b8c7f93d37207c
+  ILGHttpConstants: 715aca4c2b260527059242c0088abc748b52f98e
+  KIF: 0a82046d06f3648799cac522d2d0f7934214caac
+  VOKBenkode: 7f17656dbb496b472c12913d1a8b8bc15b43d0bd
+  VOKMockUrlProtocol: ef7ae569644af00e94f7cf25f12120e8117b612d
+  Vokoder: 6f613808c8d2eade6bc259dbbd38b3f738349ce5
+
+COCOAPODS: 0.38.2
