@@ -26,6 +26,15 @@ func ALog(message: String,
     detailedLog(message, filename, function, line)
 }
 
+/**
+Centralizes the detailed message formatting into a single method.
+
+- parameter message:  The message to print
+- parameter filename: The filename of the original caller.
+- parameter function: The function of the original caller
+- parameter line:     the line number of the original caller.
+*/
+
 private func detailedLog(message: String, _ filename: String, _ function: String, _ line: Int) {
         print("[\(filename.dlog_lastPathComponent()):\(line)] \(function) - \(message)")
 }
