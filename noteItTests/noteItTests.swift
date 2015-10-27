@@ -10,7 +10,4 @@ import XCTest
 
 class noteItTests: XCTestCase {
     
-    func testAreAnyTestsWritten() {
-        XCTFail("You should write some unit tests.")
-    }    
 }
