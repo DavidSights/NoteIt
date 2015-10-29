@@ -10,12 +10,6 @@ import UIKit
 
 class HelpViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
-
     @IBAction func dismissButtonPressed(sender: UIBarButtonItem) {
         self.navigationController?.dismissViewControllerAnimated(true, completion: nil)
     }

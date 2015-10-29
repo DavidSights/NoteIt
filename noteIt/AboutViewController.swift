@@ -10,10 +10,6 @@ import UIKit
 
 class AboutViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
-
     @IBAction func dismissButtonPressed(sender: UIBarButtonItem) {
         self.navigationController?.dismissViewControllerAnimated(true, completion: nil)
     }

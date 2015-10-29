@@ -23,5 +23,4 @@ class InitialViewController : UIViewController {
             self.performSegueWithIdentifier("SignInSegue", sender: self)
         }
     }
-
 }

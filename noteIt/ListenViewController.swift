@@ -10,11 +10,6 @@ import UIKit
 
 class ListenViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-    }
-
     @IBAction func cancelButtonPressed(sender: UIButton) {
         self.dismissViewControllerAnimated(true, completion: nil)
     }
