@@ -33,6 +33,11 @@
 		9AC2D08A1BE27482004D594E /* NoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AC2D0891BE27482004D594E /* NoteViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		9AC2D08C1BE275B0004D594E /* ListenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AC2D08B1BE275B0004D594E /* ListenViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		9AC2D08E1BE27B6C004D594E /* WriteNoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AC2D08D1BE27B6C004D594E /* WriteNoteViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		9AC2D0931BE2AD2E004D594E /* User+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AC2D08F1BE2AD2E004D594E /* User+CoreDataProperties.swift */; settings = {ASSET_TAGS = (); }; };
+		9AC2D0941BE2AD2E004D594E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AC2D0901BE2AD2E004D594E /* User.swift */; settings = {ASSET_TAGS = (); }; };
+		9AC2D0951BE2AD2E004D594E /* Note+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AC2D0911BE2AD2E004D594E /* Note+CoreDataProperties.swift */; settings = {ASSET_TAGS = (); }; };
+		9AC2D0961BE2AD2E004D594E /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AC2D0921BE2AD2E004D594E /* Note.swift */; settings = {ASSET_TAGS = (); }; };
+		9AC2D0981BE2AD97004D594E /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AC2D0971BE2AD97004D594E /* SignInViewController.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -101,6 +106,11 @@
 		9AC2D0891BE27482004D594E /* NoteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoteViewController.swift; sourceTree = "<group>"; };
 		9AC2D08B1BE275B0004D594E /* ListenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListenViewController.swift; sourceTree = "<group>"; };
 		9AC2D08D1BE27B6C004D594E /* WriteNoteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WriteNoteViewController.swift; sourceTree = "<group>"; };
+		9AC2D08F1BE2AD2E004D594E /* User+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "User+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		9AC2D0901BE2AD2E004D594E /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		9AC2D0911BE2AD2E004D594E /* Note+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Note+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		9AC2D0921BE2AD2E004D594E /* Note.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
+		9AC2D0971BE2AD97004D594E /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		ACFFB439F6D3C479E60258AE /* Pods-noteItUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-noteItUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-noteItUITests/Pods-noteItUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		B9B41CB0A726CF096DF7C4C4 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		EE3BD213BC9F04389249E756 /* Pods-noteItUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-noteItUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-noteItUITests/Pods-noteItUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -269,6 +279,7 @@
 		9A2430F71BDFC4A20056E94C /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				9AC2D0971BE2AD97004D594E /* SignInViewController.swift */,
 				9A2430F81BDFC4A20056E94C /* InitialViewController.swift */,
 				9AC2D0831BE262CA004D594E /* ListTableViewController.swift */,
 				9AC2D0851BE27390004D594E /* AboutViewController.swift */,
@@ -291,6 +302,10 @@
 		9A2430FD1BDFC4A20056E94C /* CoreDataAndModels */ = {
 			isa = PBXGroup;
 			children = (
+				9AC2D08F1BE2AD2E004D594E /* User+CoreDataProperties.swift */,
+				9AC2D0901BE2AD2E004D594E /* User.swift */,
+				9AC2D0911BE2AD2E004D594E /* Note+CoreDataProperties.swift */,
+				9AC2D0921BE2AD2E004D594E /* Note.swift */,
 				9A2431011BDFC4A20056E94C /* CoreDataUtility.swift */,
 				9A2430FE1BDFC4A20056E94C /* noteIt.xcdatamodeld */,
 			);
@@ -645,12 +660,17 @@
 				9A2430F61BDFC4A20056E94C /* TestingAppDelegate.swift in Sources */,
 				9AC2D08E1BE27B6C004D594E /* WriteNoteViewController.swift in Sources */,
 				9A2430F41BDFC4A20056E94C /* AppDelegate.swift in Sources */,
+				9AC2D0961BE2AD2E004D594E /* Note.swift in Sources */,
 				9AC2D08A1BE27482004D594E /* NoteViewController.swift in Sources */,
 				9AC2D0861BE27390004D594E /* AboutViewController.swift in Sources */,
 				9AC2D0841BE262CA004D594E /* ListTableViewController.swift in Sources */,
 				9A2430F91BDFC4A20056E94C /* InitialViewController.swift in Sources */,
+				9AC2D0941BE2AD2E004D594E /* User.swift in Sources */,
+				9AC2D0951BE2AD2E004D594E /* Note+CoreDataProperties.swift in Sources */,
 				9A2431001BDFC4A20056E94C /* noteIt.xcdatamodeld in Sources */,
 				9A2430F21BDFC4A20056E94C /* main.swift in Sources */,
+				9AC2D0931BE2AD2E004D594E /* User+CoreDataProperties.swift in Sources */,
+				9AC2D0981BE2AD97004D594E /* SignInViewController.swift in Sources */,
 				9A2431021BDFC4A20056E94C /* CoreDataUtility.swift in Sources */,
 				9AC2D0881BE27432004D594E /* HelpViewController.swift in Sources */,
 				9AC2D08C1BE275B0004D594E /* ListenViewController.swift in Sources */,

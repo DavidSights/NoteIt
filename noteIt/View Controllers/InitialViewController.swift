@@ -14,6 +14,14 @@ class InitialViewController : UIViewController {
         super.viewDidLoad()
 
         self.title = "Note It"
+        self.presentSignInIfUserNotLoggedIn()
+    }
+
+    // To be used when building for multiple users.
+    func presentSignInIfUserNotLoggedIn() {
+        if NSUserDefaults.standardUserDefaults().objectForKey("username") == nil {
+            self.performSegueWithIdentifier("SignInSegue", sender: self)
+        }
     }
 
 }
