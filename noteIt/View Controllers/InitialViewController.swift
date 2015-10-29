@@ -8,6 +8,8 @@
 
 import UIKit
 
+private let SignInSegue = "SignInSegue"
+
 class InitialViewController : UIViewController {
 
     override func viewDidLoad() {
@@ -18,9 +20,9 @@ class InitialViewController : UIViewController {
     }
 
     // To be used when building for multiple users.
-    func presentSignInIfUserNotLoggedIn() {
+    private func presentSignInIfUserNotLoggedIn() {
         if NSUserDefaults.standardUserDefaults().objectForKey("username") == nil {
-            self.performSegueWithIdentifier("SignInSegue", sender: self)
+            self.performSegueWithIdentifier(SignInSegue, sender: self)
         }
     }
 }
