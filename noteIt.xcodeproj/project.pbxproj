@@ -17,7 +17,7 @@
 		9A2430F21BDFC4A20056E94C /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2430F11BDFC4A20056E94C /* main.swift */; };
 		9A2430F41BDFC4A20056E94C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2430F31BDFC4A20056E94C /* AppDelegate.swift */; };
 		9A2430F61BDFC4A20056E94C /* TestingAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2430F51BDFC4A20056E94C /* TestingAppDelegate.swift */; };
-		9A2430F91BDFC4A20056E94C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2430F81BDFC4A20056E94C /* ViewController.swift */; };
+		9A2430F91BDFC4A20056E94C /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2430F81BDFC4A20056E94C /* InitialViewController.swift */; };
 		9A2430FC1BDFC4A20056E94C /* DLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2430FB1BDFC4A20056E94C /* DLog.swift */; };
 		9A2431001BDFC4A20056E94C /* noteIt.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9A2430FE1BDFC4A20056E94C /* noteIt.xcdatamodeld */; };
 		9A2431021BDFC4A20056E94C /* CoreDataUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2431011BDFC4A20056E94C /* CoreDataUtility.swift */; };
@@ -27,6 +27,12 @@
 		9A2431151BDFC4A20056E94C /* noteItTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2431141BDFC4A20056E94C /* noteItTests.swift */; };
 		9A2431201BDFC4A20056E94C /* noteItUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A24311F1BDFC4A20056E94C /* noteItUITests.swift */; };
 		9A2431221BDFC4A20056E94C /* XCTestCase+KIFTester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2431211BDFC4A20056E94C /* XCTestCase+KIFTester.swift */; };
+		9AC2D0841BE262CA004D594E /* ListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AC2D0831BE262CA004D594E /* ListTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		9AC2D0861BE27390004D594E /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AC2D0851BE27390004D594E /* AboutViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		9AC2D0881BE27432004D594E /* HelpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AC2D0871BE27432004D594E /* HelpViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		9AC2D08A1BE27482004D594E /* NoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AC2D0891BE27482004D594E /* NoteViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		9AC2D08C1BE275B0004D594E /* ListenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AC2D08B1BE275B0004D594E /* ListenViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		9AC2D08E1BE27B6C004D594E /* WriteNoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AC2D08D1BE27B6C004D594E /* WriteNoteViewController.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,7 +80,7 @@
 		9A2430F11BDFC4A20056E94C /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		9A2430F31BDFC4A20056E94C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9A2430F51BDFC4A20056E94C /* TestingAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestingAppDelegate.swift; sourceTree = "<group>"; };
-		9A2430F81BDFC4A20056E94C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = "View Controllers/ViewController.swift"; sourceTree = "<group>"; };
+		9A2430F81BDFC4A20056E94C /* InitialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = InitialViewController.swift; path = "View Controllers/InitialViewController.swift"; sourceTree = "<group>"; };
 		9A2430FB1BDFC4A20056E94C /* DLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DLog.swift; path = Utilities/DLog.swift; sourceTree = "<group>"; };
 		9A2430FF1BDFC4A20056E94C /* noteIt.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = noteIt.xcdatamodel; sourceTree = "<group>"; };
 		9A2431011BDFC4A20056E94C /* CoreDataUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CoreDataUtility.swift; path = CoreDataAndModels/CoreDataUtility.swift; sourceTree = "<group>"; };
@@ -89,6 +95,12 @@
 		9A24311F1BDFC4A20056E94C /* noteItUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = noteItUITests.swift; sourceTree = "<group>"; };
 		9A2431211BDFC4A20056E94C /* XCTestCase+KIFTester.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+KIFTester.swift"; sourceTree = "<group>"; };
 		9A2431231BDFC4A20056E94C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9AC2D0831BE262CA004D594E /* ListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListTableViewController.swift; sourceTree = "<group>"; };
+		9AC2D0851BE27390004D594E /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		9AC2D0871BE27432004D594E /* HelpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelpViewController.swift; sourceTree = "<group>"; };
+		9AC2D0891BE27482004D594E /* NoteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoteViewController.swift; sourceTree = "<group>"; };
+		9AC2D08B1BE275B0004D594E /* ListenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListenViewController.swift; sourceTree = "<group>"; };
+		9AC2D08D1BE27B6C004D594E /* WriteNoteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WriteNoteViewController.swift; sourceTree = "<group>"; };
 		ACFFB439F6D3C479E60258AE /* Pods-noteItUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-noteItUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-noteItUITests/Pods-noteItUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		B9B41CB0A726CF096DF7C4C4 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		EE3BD213BC9F04389249E756 /* Pods-noteItUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-noteItUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-noteItUITests/Pods-noteItUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -257,7 +269,13 @@
 		9A2430F71BDFC4A20056E94C /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				9A2430F81BDFC4A20056E94C /* ViewController.swift */,
+				9A2430F81BDFC4A20056E94C /* InitialViewController.swift */,
+				9AC2D0831BE262CA004D594E /* ListTableViewController.swift */,
+				9AC2D0851BE27390004D594E /* AboutViewController.swift */,
+				9AC2D0871BE27432004D594E /* HelpViewController.swift */,
+				9AC2D0891BE27482004D594E /* NoteViewController.swift */,
+				9AC2D08B1BE275B0004D594E /* ListenViewController.swift */,
+				9AC2D08D1BE27B6C004D594E /* WriteNoteViewController.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -384,6 +402,7 @@
 		9A2430C61BDFC4A20056E94C /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = Vokal;
 				TargetAttributes = {
@@ -624,11 +643,17 @@
 			files = (
 				9A2430FC1BDFC4A20056E94C /* DLog.swift in Sources */,
 				9A2430F61BDFC4A20056E94C /* TestingAppDelegate.swift in Sources */,
+				9AC2D08E1BE27B6C004D594E /* WriteNoteViewController.swift in Sources */,
 				9A2430F41BDFC4A20056E94C /* AppDelegate.swift in Sources */,
-				9A2430F91BDFC4A20056E94C /* ViewController.swift in Sources */,
+				9AC2D08A1BE27482004D594E /* NoteViewController.swift in Sources */,
+				9AC2D0861BE27390004D594E /* AboutViewController.swift in Sources */,
+				9AC2D0841BE262CA004D594E /* ListTableViewController.swift in Sources */,
+				9A2430F91BDFC4A20056E94C /* InitialViewController.swift in Sources */,
 				9A2431001BDFC4A20056E94C /* noteIt.xcdatamodeld in Sources */,
 				9A2430F21BDFC4A20056E94C /* main.swift in Sources */,
 				9A2431021BDFC4A20056E94C /* CoreDataUtility.swift in Sources */,
+				9AC2D0881BE27432004D594E /* HelpViewController.swift in Sources */,
+				9AC2D08C1BE275B0004D594E /* ListenViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -773,10 +798,12 @@
 			baseConfigurationReference = B9B41CB0A726CF096DF7C4C4 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = noteIt/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Vokal.noteIt;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -785,6 +812,7 @@
 			baseConfigurationReference = 142938F6519275B4926D6219 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = noteIt/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Vokal.noteIt;

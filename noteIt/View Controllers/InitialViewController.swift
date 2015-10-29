@@ -8,6 +8,12 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class InitialViewController : UIViewController {
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+        self.title = "Note It"
+    }
 
 }
