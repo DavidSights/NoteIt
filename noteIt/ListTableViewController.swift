@@ -8,9 +8,9 @@
 
 import UIKit
 
-class ListTableViewController: UITableViewController {
+private let NoteCellID = "NoteCellID"
 
-    static let NoteCellID = "noteCellID"
+class ListTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,7 +30,7 @@ class ListTableViewController: UITableViewController {
     }
 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("NoteCellID", forIndexPath: indexPath)
+        let cell = tableView.dequeueReusableCellWithIdentifier(NoteCellID, forIndexPath: indexPath)
 
         return cell
     }
