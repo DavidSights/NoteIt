@@ -10,6 +10,7 @@ import UIKit
 import Vokoder
 
 private let NoteCellID = "NoteCellID"
+private let NoteSegue = "NoteSegue"
 
 class ListTableViewController: UITableViewController {
 
@@ -23,8 +24,10 @@ class ListTableViewController: UITableViewController {
     }
 
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        if let dvc = segue.destinationViewController as? NoteViewController {
-            dvc.note = notes.objectAtIndex((self.tableView.indexPathForSelectedRow?.row)!) as? Note
+        if segue.identifier == NoteSegue {
+            if let dvc = segue.destinationViewController as? NoteViewController {
+                dvc.note = notes.objectAtIndex((self.tableView.indexPathForSelectedRow?.row)!) as? Note
+            }
         }
     }
 }
