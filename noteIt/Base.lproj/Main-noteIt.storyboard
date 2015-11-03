@@ -385,7 +385,7 @@
             </objects>
             <point key="canvasLocation" x="2063" y="477"/>
         </scene>
-        <!--Note View Controller-->
+        <!--Title-->
         <scene sceneID="cNL-p9-e4o">
             <objects>
                 <viewController id="3cc-GK-6gf" customClass="NoteViewController" customModule="noteIt" customModuleProvider="target" sceneMemberID="viewController">
@@ -411,7 +411,15 @@
                             <constraint firstItem="jjg-5G-cMS" firstAttribute="top" secondItem="n9N-CR-7bn" secondAttribute="bottom" id="P6S-Ze-a2L"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Title" id="Lyy-TH-egD">
+                        <barButtonItem key="rightBarButtonItem" title="Edit" id="enO-ll-sLP">
+                            <connections>
+                                <action selector="editButtonPressed:" destination="3cc-GK-6gf" id="hgJ-p4-Xcw"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
+                        <outlet property="editButton" destination="enO-ll-sLP" id="yxT-Wg-LOA"/>
                         <outlet property="textView" destination="n9N-CR-7bn" id="Uxh-Qh-0kw"/>
                     </connections>
                 </viewController>
