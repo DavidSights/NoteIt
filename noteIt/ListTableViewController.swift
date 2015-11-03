@@ -21,4 +21,11 @@ class ListTableViewController: UITableViewController {
         self.title = "Notes"
         dataSource = NITNotesDataSource.init(tableView: self.tableView)
     }
+
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if let dvc = segue.destinationViewController as? NoteViewController {
+            dvc.note = notes.objectAtIndex((self.tableView.indexPathForSelectedRow?.row)!) as! Note
+        }
+    }
+
 }
