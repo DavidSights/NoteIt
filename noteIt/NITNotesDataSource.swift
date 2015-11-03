@@ -23,9 +23,10 @@ class NITNotesDataSource: VOKFetchedResultsDataSource {
     }
 
     override func cellAtIndexPath(indexPath: NSIndexPath!) -> UITableViewCell! {
-        let cell = UITableViewCell()
+        let cell = tableView?.dequeueReusableCellWithIdentifier("NoteCellID")
         let note:Note = self.fetchedResultsController.objectAtIndexPath(indexPath) as! Note
-        cell.textLabel?.text = note.text
+
+        cell?.textLabel?.text = note.text
 
         return cell
     }

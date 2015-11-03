@@ -10,6 +10,14 @@ import UIKit
 
 class NoteViewController: UIViewController {
 
-    var note:Note!
-    
+    @IBOutlet weak var textView: UITextView?
+
+    var note:Note?
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+        print("Note text: \(self.note?.text)")
+        self.textView?.text = self.note?.text
+    }
 }

@@ -24,8 +24,7 @@ class ListTableViewController: UITableViewController {
 
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if let dvc = segue.destinationViewController as? NoteViewController {
-            dvc.note = notes.objectAtIndex((self.tableView.indexPathForSelectedRow?.row)!) as! Note
+            dvc.note = notes.objectAtIndex((self.tableView.indexPathForSelectedRow?.row)!) as? Note
         }
     }
-
 }
