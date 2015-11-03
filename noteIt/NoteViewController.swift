@@ -18,8 +18,6 @@ class NoteViewController: UIViewController, UITextViewDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        print("Note text: \(self.note?.text)")
         self.textView?.text = self.note?.text
         self.textView?.delegate = self
     }
