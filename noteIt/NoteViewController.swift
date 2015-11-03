@@ -7,8 +7,9 @@
 //
 
 import UIKit
+import Vokoder
 
-class NoteViewController: UIViewController {
+class NoteViewController: UIViewController, UITextViewDelegate {
 
     @IBOutlet weak var textView: UITextView?
     @IBOutlet weak var editButton: UIBarButtonItem!
@@ -20,6 +21,7 @@ class NoteViewController: UIViewController {
 
         print("Note text: \(self.note?.text)")
         self.textView?.text = self.note?.text
+        self.textView?.delegate = self
     }
 
     func updateEditButtonAndTextView() {
@@ -36,5 +38,10 @@ class NoteViewController: UIViewController {
 
     @IBAction func editButtonPressed(sender: AnyObject) {
         self.updateEditButtonAndTextView()
+    }
+
+    func textViewDidChange(textView: UITextView) {
+        self.note?.text = self.textView?.text
+        VOKCoreDataManager.sharedInstance().saveMainContext()
     }
 }
