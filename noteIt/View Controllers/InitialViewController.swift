@@ -16,7 +16,7 @@ class InitialViewController : UIViewController {
         super.viewDidLoad()
 
         self.title = "Note It"
-        self.presentSignInIfUserNotLoggedIn()
+//        self.presentSignInIfUserNotLoggedIn()
     }
 
     // To be used when building for multiple users.

@@ -7,31 +7,18 @@
 //
 
 import UIKit
+import Vokoder
 
 private let NoteCellID = "NoteCellID"
 
 class ListTableViewController: UITableViewController {
 
+    private let notes:NSArray = Note.vok_fetchAllForPredicate(nil, forManagedObjectContext: nil)
+    private var dataSource: NITNotesDataSource?
+
     override func viewDidLoad() {
         super.viewDidLoad()
-
         self.title = "Notes"
-    }
-
-    // MARK: - Table view data source
-
-    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
-    }
-
-    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 0
-    }
-
-    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier(NoteCellID, forIndexPath: indexPath)
-
-        return cell
+        dataSource = NITNotesDataSource.init(tableView: self.tableView)
     }
 }

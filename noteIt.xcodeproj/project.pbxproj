@@ -27,6 +27,8 @@
 		9A2431151BDFC4A20056E94C /* noteItTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2431141BDFC4A20056E94C /* noteItTests.swift */; };
 		9A2431201BDFC4A20056E94C /* noteItUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A24311F1BDFC4A20056E94C /* noteItUITests.swift */; };
 		9A2431221BDFC4A20056E94C /* XCTestCase+KIFTester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2431211BDFC4A20056E94C /* XCTestCase+KIFTester.swift */; };
+		9A337E2A1BE410CA00984C15 /* NITDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A337E291BE410CA00984C15 /* NITDataSource.swift */; settings = {ASSET_TAGS = (); }; };
+		9A337E2C1BE7C9F800984C15 /* NITNotesDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A337E2B1BE7C9F800984C15 /* NITNotesDataSource.swift */; settings = {ASSET_TAGS = (); }; };
 		9AC2D0841BE262CA004D594E /* ListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AC2D0831BE262CA004D594E /* ListTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		9AC2D0861BE27390004D594E /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AC2D0851BE27390004D594E /* AboutViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		9AC2D0881BE27432004D594E /* HelpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AC2D0871BE27432004D594E /* HelpViewController.swift */; settings = {ASSET_TAGS = (); }; };
@@ -100,6 +102,8 @@
 		9A24311F1BDFC4A20056E94C /* noteItUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = noteItUITests.swift; sourceTree = "<group>"; };
 		9A2431211BDFC4A20056E94C /* XCTestCase+KIFTester.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+KIFTester.swift"; sourceTree = "<group>"; };
 		9A2431231BDFC4A20056E94C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9A337E291BE410CA00984C15 /* NITDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NITDataSource.swift; sourceTree = "<group>"; };
+		9A337E2B1BE7C9F800984C15 /* NITNotesDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NITNotesDataSource.swift; sourceTree = "<group>"; };
 		9AC2D0831BE262CA004D594E /* ListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListTableViewController.swift; sourceTree = "<group>"; };
 		9AC2D0851BE27390004D594E /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		9AC2D0871BE27432004D594E /* HelpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelpViewController.swift; sourceTree = "<group>"; };
@@ -211,7 +215,9 @@
 		9A2430D51BDFC4A20056E94C /* Data Sources */ = {
 			isa = PBXGroup;
 			children = (
+				9A337E2B1BE7C9F800984C15 /* NITNotesDataSource.swift */,
 				9A2430D61BDFC4A20056E94C /* .gitkeep */,
+				9A337E291BE410CA00984C15 /* NITDataSource.swift */,
 			);
 			name = "Data Sources";
 			sourceTree = "<group>";
@@ -281,12 +287,12 @@
 			children = (
 				9AC2D0971BE2AD97004D594E /* SignInViewController.swift */,
 				9A2430F81BDFC4A20056E94C /* InitialViewController.swift */,
+				9AC2D08D1BE27B6C004D594E /* WriteNoteViewController.swift */,
+				9AC2D08B1BE275B0004D594E /* ListenViewController.swift */,
 				9AC2D0831BE262CA004D594E /* ListTableViewController.swift */,
+				9AC2D0891BE27482004D594E /* NoteViewController.swift */,
 				9AC2D0851BE27390004D594E /* AboutViewController.swift */,
 				9AC2D0871BE27432004D594E /* HelpViewController.swift */,
-				9AC2D0891BE27482004D594E /* NoteViewController.swift */,
-				9AC2D08B1BE275B0004D594E /* ListenViewController.swift */,
-				9AC2D08D1BE27B6C004D594E /* WriteNoteViewController.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -658,6 +664,7 @@
 			files = (
 				9A2430FC1BDFC4A20056E94C /* DLog.swift in Sources */,
 				9A2430F61BDFC4A20056E94C /* TestingAppDelegate.swift in Sources */,
+				9A337E2C1BE7C9F800984C15 /* NITNotesDataSource.swift in Sources */,
 				9AC2D08E1BE27B6C004D594E /* WriteNoteViewController.swift in Sources */,
 				9A2430F41BDFC4A20056E94C /* AppDelegate.swift in Sources */,
 				9AC2D0961BE2AD2E004D594E /* Note.swift in Sources */,
@@ -665,6 +672,7 @@
 				9AC2D0861BE27390004D594E /* AboutViewController.swift in Sources */,
 				9AC2D0841BE262CA004D594E /* ListTableViewController.swift in Sources */,
 				9A2430F91BDFC4A20056E94C /* InitialViewController.swift in Sources */,
+				9A337E2A1BE410CA00984C15 /* NITDataSource.swift in Sources */,
 				9AC2D0941BE2AD2E004D594E /* User.swift in Sources */,
 				9AC2D0951BE2AD2E004D594E /* Note+CoreDataProperties.swift in Sources */,
 				9A2431001BDFC4A20056E94C /* noteIt.xcdatamodeld in Sources */,

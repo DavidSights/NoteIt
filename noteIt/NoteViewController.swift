@@ -9,5 +9,7 @@
 import UIKit
 
 class NoteViewController: UIViewController {
+
+    var note:Note!
     
 }
