@@ -27,7 +27,6 @@
 		9A2431151BDFC4A20056E94C /* noteItTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2431141BDFC4A20056E94C /* noteItTests.swift */; };
 		9A2431201BDFC4A20056E94C /* noteItUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A24311F1BDFC4A20056E94C /* noteItUITests.swift */; };
 		9A2431221BDFC4A20056E94C /* XCTestCase+KIFTester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2431211BDFC4A20056E94C /* XCTestCase+KIFTester.swift */; };
-		9A337E2A1BE410CA00984C15 /* NITDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A337E291BE410CA00984C15 /* NITDataSource.swift */; settings = {ASSET_TAGS = (); }; };
 		9A337E2C1BE7C9F800984C15 /* NITNotesDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A337E2B1BE7C9F800984C15 /* NITNotesDataSource.swift */; settings = {ASSET_TAGS = (); }; };
 		9AC2D0841BE262CA004D594E /* ListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AC2D0831BE262CA004D594E /* ListTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		9AC2D0861BE27390004D594E /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AC2D0851BE27390004D594E /* AboutViewController.swift */; settings = {ASSET_TAGS = (); }; };
@@ -102,7 +101,6 @@
 		9A24311F1BDFC4A20056E94C /* noteItUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = noteItUITests.swift; sourceTree = "<group>"; };
 		9A2431211BDFC4A20056E94C /* XCTestCase+KIFTester.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+KIFTester.swift"; sourceTree = "<group>"; };
 		9A2431231BDFC4A20056E94C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9A337E291BE410CA00984C15 /* NITDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NITDataSource.swift; sourceTree = "<group>"; };
 		9A337E2B1BE7C9F800984C15 /* NITNotesDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NITNotesDataSource.swift; sourceTree = "<group>"; };
 		9AC2D0831BE262CA004D594E /* ListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListTableViewController.swift; sourceTree = "<group>"; };
 		9AC2D0851BE27390004D594E /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
@@ -217,7 +215,6 @@
 			children = (
 				9A337E2B1BE7C9F800984C15 /* NITNotesDataSource.swift */,
 				9A2430D61BDFC4A20056E94C /* .gitkeep */,
-				9A337E291BE410CA00984C15 /* NITDataSource.swift */,
 			);
 			name = "Data Sources";
 			sourceTree = "<group>";
@@ -672,7 +669,6 @@
 				9AC2D0861BE27390004D594E /* AboutViewController.swift in Sources */,
 				9AC2D0841BE262CA004D594E /* ListTableViewController.swift in Sources */,
 				9A2430F91BDFC4A20056E94C /* InitialViewController.swift in Sources */,
-				9A337E2A1BE410CA00984C15 /* NITDataSource.swift in Sources */,
 				9AC2D0941BE2AD2E004D594E /* User.swift in Sources */,
 				9AC2D0951BE2AD2E004D594E /* Note+CoreDataProperties.swift in Sources */,
 				9A2431001BDFC4A20056E94C /* noteIt.xcdatamodeld in Sources */,
