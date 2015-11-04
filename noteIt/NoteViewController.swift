@@ -10,6 +10,7 @@ import UIKit
 import Vokoder
 
 private let EditString = "Edit"
+private let DoneString = "Done"
 
 class NoteViewController: UIViewController {
 
@@ -39,7 +40,7 @@ class NoteViewController: UIViewController {
         self.textView.editable = !self.textView.editable
 
         if editButton.title == EditString {
-            editButton.title = "Done"
+            editButton.title = DoneString
             self.textView.becomeFirstResponder()
         } else {
             editButton.title = EditString
@@ -53,6 +54,7 @@ class NoteViewController: UIViewController {
 
 extension NoteViewController: UITextViewDelegate {
 
+    // TODO: Move saving to when back button is pressed and/or view is put into the background.
     func textViewDidChange(textView: UITextView) {
         self.note?.text = self.textView.text
         VOKCoreDataManager.sharedInstance().saveMainContext()
