@@ -9,11 +9,11 @@
 import UIKit
 import Vokoder
 
-class WriteNoteViewController: UIViewController, UITextViewDelegate {
-
-    private let note = Note.vok_newInstance()
+class WriteNoteViewController: UIViewController {
 
     @IBOutlet private weak var textView: UITextView!
+
+    private let note = Note.vok_newInstance()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,9 +29,12 @@ class WriteNoteViewController: UIViewController, UITextViewDelegate {
     @IBAction func cancelButtonPressed(sender: UIBarButtonItem) {
         self.navigationController?.dismissViewControllerAnimated(true, completion: nil)
     }
+}
+
+extension WriteNoteViewController: UITextViewDelegate {
 
     func textViewDidChange(textView: UITextView) {
-        note.text = self.textView.text
+        self.note.text = self.textView.text
         VOKCoreDataManager.sharedInstance().saveMainContext()
     }
 }

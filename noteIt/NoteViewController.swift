@@ -9,37 +9,52 @@
 import UIKit
 import Vokoder
 
-class NoteViewController: UIViewController, UITextViewDelegate {
+private let EditString = "Edit"
 
-    @IBOutlet weak var textView: UITextView?
-    @IBOutlet weak var editButton: UIBarButtonItem!
+class NoteViewController: UIViewController {
 
-    var note:Note?
+    @IBOutlet private weak var textView: UITextView!
+    @IBOutlet private weak var editButton: UIBarButtonItem!
+
+    var note: Note?
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.textView?.text = self.note?.text
-        self.textView?.delegate = self
+
+        guard let
+            textView = self.textView,
+            note = self.note else {
+                return
+        }
+
+        textView.text = note.text
     }
 
-    func updateEditButtonAndTextView() {
+    private func updateEditButtonAndTextView() {
 
-        self.textView?.editable = !self.textView!.editable
+        guard let editButton = self.navigationItem.rightBarButtonItem else {
+            return
+        }
 
-        if self.navigationItem.rightBarButtonItem?.title == "Edit" {
-            self.navigationItem.rightBarButtonItem?.title = "Done"
-            self.textView?.becomeFirstResponder()
+        self.textView.editable = !self.textView.editable
+
+        if editButton.title == EditString {
+            editButton.title = "Done"
+            self.textView.becomeFirstResponder()
         } else {
-            self.navigationItem.rightBarButtonItem?.title = "Edit"
+            editButton.title = EditString
         }
     }
 
     @IBAction func editButtonPressed(sender: AnyObject) {
         self.updateEditButtonAndTextView()
     }
+}
+
+extension NoteViewController: UITextViewDelegate {
 
     func textViewDidChange(textView: UITextView) {
-        self.note?.text = self.textView?.text
+        self.note?.text = self.textView.text
         VOKCoreDataManager.sharedInstance().saveMainContext()
     }
 }

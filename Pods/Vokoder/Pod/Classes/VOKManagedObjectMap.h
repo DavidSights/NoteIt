@@ -5,6 +5,9 @@
 
 #import <Foundation/Foundation.h>
 
+#import "VOKCoreDataCollectionTypes.h"
+#import "VOKNullabilityFeatures.h"
+
 /**
  *  Generate a string from a selector symbol.
  *
@@ -32,6 +35,8 @@
 #   define VOK_MAP_FOREIGN_TO_LOCAL(inputKeyPath, coreDataSelectorSymbol) [VOKManagedObjectMap mapWithForeignKeyPath:inputKeyPath coreDataKey:VOK_CDSELECTOR(coreDataSelectorSymbol)]
 #endif
 
+NS_ASSUME_NONNULL_BEGIN
+
 @interface VOKManagedObjectMap : NSObject
 
 /// Remote key for input/output
@@ -41,10 +46,10 @@
 @property (nonatomic, copy) NSString *coreDataKey;
 
 /// Date formatter for input/output
-@property (nonatomic, strong) NSDateFormatter *dateFormatter;
+@property (nonatomic, strong) NSDateFormatter * __nullable dateFormatter;
 
 /// Number formatter for input/output
-@property (nonatomic, strong) NSNumberFormatter *numberFormatter;
+@property (nonatomic, strong) NSNumberFormatter * __nullable numberFormatter;
 
 /**
  Creates a map with the default date mapper.
@@ -82,7 +87,7 @@
  @param mapDict     Each key is the expected input keyPath and each value is core data key.
  @return            An array of VOKManagedObjectMaps.
  */
-+ (NSArray *)mapsFromDictionary:(NSDictionary *)mapDict;
++ (VOKArrayOfManagedObjectMaps *)mapsFromDictionary:(VOKStringToStringDictionary *)mapDict;
 
 /**
  Default formatter used for date fields. This is the RFC 3339 format, with
@@ -106,3 +111,5 @@
 + (NSDateFormatter *)vok_dateFormatterWithoutMicroseconds;
 
 @end
+
+NS_ASSUME_NONNULL_END
