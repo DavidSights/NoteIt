@@ -18,7 +18,7 @@ class ListTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "Notes"
-        dataSource = NotesDataSource(tableView: self.tableView)
+        self.dataSource = NotesDataSource(tableView: self.tableView)
     }
 
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
