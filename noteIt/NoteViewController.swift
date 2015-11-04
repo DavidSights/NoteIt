@@ -7,7 +7,56 @@
 //
 
 import UIKit
+import Vokoder
+
+private let EditString = "Edit"
+private let DoneString = "Done"
 
 class NoteViewController: UIViewController {
-    
+
+    @IBOutlet private weak var textView: UITextView!
+    @IBOutlet private weak var editButton: UIBarButtonItem!
+
+    var note: Note?
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+        guard let
+            textView = self.textView,
+            note = self.note else {
+                return
+        }
+
+        textView.text = note.text
+    }
+
+    private func updateEditButtonAndTextView() {
+
+        guard let editButton = self.navigationItem.rightBarButtonItem else {
+            return
+        }
+
+        self.textView.editable = !self.textView.editable
+
+        if editButton.title == EditString {
+            editButton.title = DoneString
+            self.textView.becomeFirstResponder()
+        } else {
+            editButton.title = EditString
+        }
+    }
+
+    @IBAction func editButtonPressed(sender: AnyObject) {
+        self.updateEditButtonAndTextView()
+    }
+}
+
+extension NoteViewController: UITextViewDelegate {
+
+    // TODO: Move saving to when back button is pressed and/or view is put into the background.
+    func textViewDidChange(textView: UITextView) {
+        self.note?.text = self.textView.text
+        VOKCoreDataManager.sharedInstance().saveMainContext()
+    }
 }

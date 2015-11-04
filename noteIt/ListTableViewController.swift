@@ -7,31 +7,32 @@
 //
 
 import UIKit
+import Vokoder
 
-private let NoteCellID = "NoteCellID"
+private let NoteSegue = "NoteSegue"
 
 class ListTableViewController: UITableViewController {
 
+    private var dataSource: NotesDataSource?
+
     override func viewDidLoad() {
         super.viewDidLoad()
-
         self.title = "Notes"
+        self.dataSource = NotesDataSource(tableView: self.tableView)
     }
 
-    // MARK: - Table view data source
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
 
-    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
-    }
+        if segue.identifier == NoteSegue {
 
-    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 0
-    }
+            guard let
+                dvc = segue.destinationViewController as? NoteViewController,
+                indexPath = self.tableView.indexPathForSelectedRow,
+                note = self.dataSource?.fetchedResultsController.objectAtIndexPath(indexPath) as? Note else {
+                    return
+            }
 
-    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier(NoteCellID, forIndexPath: indexPath)
-
-        return cell
+            dvc.note = note
+        }
     }
 }

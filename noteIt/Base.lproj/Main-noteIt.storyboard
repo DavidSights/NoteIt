@@ -385,7 +385,7 @@
             </objects>
             <point key="canvasLocation" x="2063" y="477"/>
         </scene>
-        <!--Note View Controller-->
+        <!--Title-->
         <scene sceneID="cNL-p9-e4o">
             <objects>
                 <viewController id="3cc-GK-6gf" customClass="NoteViewController" customModule="noteIt" customModuleProvider="target" sceneMemberID="viewController">
@@ -396,8 +396,35 @@
                     <view key="view" contentMode="scaleToFill" id="2gW-Zk-a2G">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="n9N-CR-7bn">
+                                <rect key="frame" x="0.0" y="-1" width="600" height="601"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <connections>
+                                    <outlet property="delegate" destination="3cc-GK-6gf" id="6hf-29-rAa"/>
+                                </connections>
+                            </textView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="n9N-CR-7bn" firstAttribute="leading" secondItem="2gW-Zk-a2G" secondAttribute="leading" id="CSs-wn-aPX"/>
+                            <constraint firstAttribute="trailing" secondItem="n9N-CR-7bn" secondAttribute="trailing" id="CgR-Ax-cK0"/>
+                            <constraint firstItem="n9N-CR-7bn" firstAttribute="top" secondItem="cX3-T7-IHr" secondAttribute="bottom" constant="-65" id="OIo-hk-r2I"/>
+                            <constraint firstItem="jjg-5G-cMS" firstAttribute="top" secondItem="n9N-CR-7bn" secondAttribute="bottom" id="P6S-Ze-a2L"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Title" id="Lyy-TH-egD">
+                        <barButtonItem key="rightBarButtonItem" title="Edit" id="enO-ll-sLP">
+                            <connections>
+                                <action selector="editButtonPressed:" destination="3cc-GK-6gf" id="hgJ-p4-Xcw"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="editButton" destination="enO-ll-sLP" id="yxT-Wg-LOA"/>
+                        <outlet property="textView" destination="n9N-CR-7bn" id="Uxh-Qh-0kw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ysk-hX-fXP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
