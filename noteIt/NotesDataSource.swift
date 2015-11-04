@@ -29,8 +29,7 @@ class NotesDataSource: VOKFetchedResultsDataSource {
         guard let
             cell = self.tableView?.dequeueReusableCellWithIdentifier(NoteCellID, forIndexPath: indexPath),
             note = self.fetchedResultsController.objectAtIndexPath(indexPath) as? Note else {
-                assert(self.tableView?.dequeueReusableCellWithIdentifier(NoteCellID, forIndexPath: indexPath) != nil, "UITableViewCell for \(NoteCellID) is nil")
-                return UITableViewCell()
+                fatalError("Failed to get cell for identifier \(NoteCellID) or note for index path \(indexPath)")
         }
 
         cell.textLabel?.text = note.text
