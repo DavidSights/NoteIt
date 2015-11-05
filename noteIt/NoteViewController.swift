@@ -31,6 +31,10 @@ class NoteViewController: UIViewController {
         textView.text = note.text
     }
 
+    override func viewDidDisappear(animated: Bool) {
+        VOKCoreDataManager.sharedInstance().saveMainContext()
+    }
+
     private func updateEditButtonAndTextView() {
 
         guard let editButton = self.navigationItem.rightBarButtonItem else {
@@ -54,9 +58,7 @@ class NoteViewController: UIViewController {
 
 extension NoteViewController: UITextViewDelegate {
 
-    // TODO: Move saving to when back button is pressed and/or view is put into the background.
     func textViewDidChange(textView: UITextView) {
         self.note?.text = self.textView.text
-        VOKCoreDataManager.sharedInstance().saveMainContext()
     }
 }
