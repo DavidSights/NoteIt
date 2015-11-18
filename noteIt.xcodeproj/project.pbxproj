@@ -28,6 +28,13 @@
 		9A2431201BDFC4A20056E94C /* noteItUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A24311F1BDFC4A20056E94C /* noteItUITests.swift */; };
 		9A2431221BDFC4A20056E94C /* XCTestCase+KIFTester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2431211BDFC4A20056E94C /* XCTestCase+KIFTester.swift */; };
 		9A337E2C1BE7C9F800984C15 /* NotesDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A337E2B1BE7C9F800984C15 /* NotesDataSource.swift */; };
+		9A6018611BFBCA53009CC3FD /* SpeechKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A6018601BFBCA53009CC3FD /* SpeechKit.framework */; };
+		9A6018681BFBDDD9009CC3FD /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A6018661BFBDDD9009CC3FD /* AVFoundation.framework */; };
+		9A6018691BFBDDD9009CC3FD /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A6018671BFBDDD9009CC3FD /* AVKit.framework */; };
+		9A60186D1BFBDE74009CC3FD /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A60186C1BFBDE74009CC3FD /* CoreAudio.framework */; };
+		9A60186F1BFBDE8A009CC3FD /* CoreAudioKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A60186E1BFBDE8A009CC3FD /* CoreAudioKit.framework */; };
+		9A6018721BFBDEB7009CC3FD /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A6018711BFBDEB7009CC3FD /* AudioToolbox.framework */; };
+		9A6018741BFBDF08009CC3FD /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A6018731BFBDF08009CC3FD /* SystemConfiguration.framework */; };
 		9AC2D0841BE262CA004D594E /* ListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AC2D0831BE262CA004D594E /* ListTableViewController.swift */; };
 		9AC2D0861BE27390004D594E /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AC2D0851BE27390004D594E /* AboutViewController.swift */; };
 		9AC2D0881BE27432004D594E /* HelpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AC2D0871BE27432004D594E /* HelpViewController.swift */; };
@@ -103,6 +110,15 @@
 		9A2431211BDFC4A20056E94C /* XCTestCase+KIFTester.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+KIFTester.swift"; sourceTree = "<group>"; };
 		9A2431231BDFC4A20056E94C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9A337E2B1BE7C9F800984C15 /* NotesDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotesDataSource.swift; sourceTree = "<group>"; };
+		9A6018601BFBCA53009CC3FD /* SpeechKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpeechKit.framework; path = noteIt/SpeechKit.framework; sourceTree = "<group>"; };
+		9A6018621BFBDCA5009CC3FD /* noteIt-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "noteIt-Bridging-Header.h"; sourceTree = "<group>"; };
+		9A6018661BFBDDD9009CC3FD /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		9A6018671BFBDDD9009CC3FD /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
+		9A60186A1BFBDE21009CC3FD /* AudioUnit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioUnit.framework; path = System/Library/Frameworks/AudioUnit.framework; sourceTree = SDKROOT; };
+		9A60186C1BFBDE74009CC3FD /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		9A60186E1BFBDE8A009CC3FD /* CoreAudioKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudioKit.framework; path = System/Library/Frameworks/CoreAudioKit.framework; sourceTree = SDKROOT; };
+		9A6018711BFBDEB7009CC3FD /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		9A6018731BFBDF08009CC3FD /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		9AC2D0831BE262CA004D594E /* ListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListTableViewController.swift; sourceTree = "<group>"; };
 		9AC2D0851BE27390004D594E /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		9AC2D0871BE27432004D594E /* HelpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelpViewController.swift; sourceTree = "<group>"; };
@@ -126,7 +142,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A6018741BFBDF08009CC3FD /* SystemConfiguration.framework in Frameworks */,
+				9A6018721BFBDEB7009CC3FD /* AudioToolbox.framework in Frameworks */,
+				9A60186F1BFBDE8A009CC3FD /* CoreAudioKit.framework in Frameworks */,
+				9A60186D1BFBDE74009CC3FD /* CoreAudio.framework in Frameworks */,
+				9A6018681BFBDDD9009CC3FD /* AVFoundation.framework in Frameworks */,
+				9A6018691BFBDDD9009CC3FD /* AVKit.framework in Frameworks */,
 				6EF8D7F29F9348C09B9D0EC6 /* Pods.framework in Frameworks */,
+				9A6018611BFBCA53009CC3FD /* SpeechKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -152,6 +175,14 @@
 		40A920BC7302D5C11737F51E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9A6018731BFBDF08009CC3FD /* SystemConfiguration.framework */,
+				9A6018711BFBDEB7009CC3FD /* AudioToolbox.framework */,
+				9A60186E1BFBDE8A009CC3FD /* CoreAudioKit.framework */,
+				9A60186C1BFBDE74009CC3FD /* CoreAudio.framework */,
+				9A60186A1BFBDE21009CC3FD /* AudioUnit.framework */,
+				9A6018661BFBDDD9009CC3FD /* AVFoundation.framework */,
+				9A6018671BFBDDD9009CC3FD /* AVKit.framework */,
+				9A6018601BFBCA53009CC3FD /* SpeechKit.framework */,
 				6B32A04747749171C3F5D1C2 /* Pods.framework */,
 				87FD7CFD94373039439F5430 /* Pods_noteItTests.framework */,
 				F30DF909F7F27D7370FDFBFA /* Pods_noteItUITests.framework */,
@@ -201,6 +232,7 @@
 				9A2430FA1BDFC4A20056E94C /* Utilities */,
 				9A2430FD1BDFC4A20056E94C /* CoreDataAndModels */,
 				9A2430E91BDFC4A20056E94C /* Supporting Files */,
+				9A6018621BFBDCA5009CC3FD /* noteIt-Bridging-Header.h */,
 			);
 			path = noteIt;
 			sourceTree = "<group>";
@@ -423,7 +455,7 @@
 		9A2430C61BDFC4A20056E94C /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0700;
+				LastSwiftUpdateCheck = 0710;
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = Vokal;
 				TargetAttributes = {
@@ -827,10 +859,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/noteIt",
+				);
 				INFOPLIST_FILE = noteIt/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Vokal.noteIt;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "noteIt/noteIt-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -841,10 +878,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/noteIt",
+				);
 				INFOPLIST_FILE = noteIt/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Vokal.noteIt;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "noteIt/noteIt-Bridging-Header.h";
 			};
 			name = Release;
 		};
