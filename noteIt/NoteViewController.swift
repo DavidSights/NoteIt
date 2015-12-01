@@ -32,6 +32,7 @@ class NoteViewController: UIViewController {
     }
 
     override func viewDidDisappear(animated: Bool) {
+        super.viewDidDisappear(animated)
         VOKCoreDataManager.sharedInstance().saveMainContext()
     }
 
