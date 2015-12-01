@@ -7,7 +7,3 @@
 //
 
 import UIKit
-
-class NITConstants: NSObject {
-    
-}
