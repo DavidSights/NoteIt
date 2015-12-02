@@ -35,6 +35,10 @@
 		9A60186F1BFBDE8A009CC3FD /* CoreAudioKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A60186E1BFBDE8A009CC3FD /* CoreAudioKit.framework */; };
 		9A6018721BFBDEB7009CC3FD /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A6018711BFBDEB7009CC3FD /* AudioToolbox.framework */; };
 		9A6018741BFBDF08009CC3FD /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A6018731BFBDF08009CC3FD /* SystemConfiguration.framework */; };
+		9AAB277F1C0F5E98002A74FF /* SpeechKitApplicationID.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AAB277E1C0F5E98002A74FF /* SpeechKitApplicationID.m */; };
+		9AAB27831C0F9028002A74FF /* earcon_cancel.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9AAB27801C0F9028002A74FF /* earcon_cancel.wav */; };
+		9AAB27841C0F9028002A74FF /* earcon_done_listening.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9AAB27811C0F9028002A74FF /* earcon_done_listening.wav */; };
+		9AAB27851C0F9028002A74FF /* earcon_listening.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9AAB27821C0F9028002A74FF /* earcon_listening.wav */; };
 		9AC2D0841BE262CA004D594E /* ListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AC2D0831BE262CA004D594E /* ListTableViewController.swift */; };
 		9AC2D0861BE27390004D594E /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AC2D0851BE27390004D594E /* AboutViewController.swift */; };
 		9AC2D0881BE27432004D594E /* HelpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AC2D0871BE27432004D594E /* HelpViewController.swift */; };
@@ -119,6 +123,10 @@
 		9A60186E1BFBDE8A009CC3FD /* CoreAudioKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudioKit.framework; path = System/Library/Frameworks/CoreAudioKit.framework; sourceTree = SDKROOT; };
 		9A6018711BFBDEB7009CC3FD /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		9A6018731BFBDF08009CC3FD /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		9AAB277E1C0F5E98002A74FF /* SpeechKitApplicationID.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpeechKitApplicationID.m; sourceTree = "<group>"; };
+		9AAB27801C0F9028002A74FF /* earcon_cancel.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = earcon_cancel.wav; path = ../../../../../Downloads/DragonMobileSDK_1.4.21/DragonMobileRecognizer/earcon_cancel.wav; sourceTree = "<group>"; };
+		9AAB27811C0F9028002A74FF /* earcon_done_listening.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = earcon_done_listening.wav; path = ../../../../../Downloads/DragonMobileSDK_1.4.21/DragonMobileRecognizer/earcon_done_listening.wav; sourceTree = "<group>"; };
+		9AAB27821C0F9028002A74FF /* earcon_listening.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = earcon_listening.wav; path = ../../../../../Downloads/DragonMobileSDK_1.4.21/DragonMobileRecognizer/earcon_listening.wav; sourceTree = "<group>"; };
 		9AC2D0831BE262CA004D594E /* ListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListTableViewController.swift; sourceTree = "<group>"; };
 		9AC2D0851BE27390004D594E /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		9AC2D0871BE27432004D594E /* HelpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelpViewController.swift; sourceTree = "<group>"; };
@@ -215,6 +223,7 @@
 		9A2430D21BDFC4A20056E94C /* noteIt */ = {
 			isa = PBXGroup;
 			children = (
+				9AAB277E1C0F5E98002A74FF /* SpeechKitApplicationID.m */,
 				9A2430F31BDFC4A20056E94C /* AppDelegate.swift */,
 				9AF6572C1BEC13160034705B /* NITConstants.swift */,
 				9A2430F51BDFC4A20056E94C /* TestingAppDelegate.swift */,
@@ -299,6 +308,9 @@
 		9A2430E91BDFC4A20056E94C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				9AAB27801C0F9028002A74FF /* earcon_cancel.wav */,
+				9AAB27811C0F9028002A74FF /* earcon_done_listening.wav */,
+				9AAB27821C0F9028002A74FF /* earcon_listening.wav */,
 				9A2430EA1BDFC4A20056E94C /* noteIt-Non-UI-Tests.xcscheme */,
 				9A2430EC1BDFC4A20056E94C /* noteIt.xcscheme */,
 				9A2430F11BDFC4A20056E94C /* main.swift */,
@@ -499,6 +511,9 @@
 			files = (
 				9A2431071BDFC4A20056E94C /* Main-noteIt.storyboard in Resources */,
 				9A2430ED1BDFC4A20056E94C /* noteIt.xcscheme in Resources */,
+				9AAB27851C0F9028002A74FF /* earcon_listening.wav in Resources */,
+				9AAB27831C0F9028002A74FF /* earcon_cancel.wav in Resources */,
+				9AAB27841C0F9028002A74FF /* earcon_done_listening.wav in Resources */,
 				9A2431041BDFC4A20056E94C /* Images.xcassets in Resources */,
 				9A24310A1BDFC4A20056E94C /* LaunchScreen.xib in Resources */,
 				9A2430EB1BDFC4A20056E94C /* noteIt-Non-UI-Tests.xcscheme in Resources */,
@@ -700,6 +715,7 @@
 				9AC2D08E1BE27B6C004D594E /* WriteNoteViewController.swift in Sources */,
 				9A2430F41BDFC4A20056E94C /* AppDelegate.swift in Sources */,
 				9AC2D0961BE2AD2E004D594E /* Note.swift in Sources */,
+				9AAB277F1C0F5E98002A74FF /* SpeechKitApplicationID.m in Sources */,
 				9AC2D08A1BE27482004D594E /* NoteViewController.swift in Sources */,
 				9AC2D0861BE27390004D594E /* AboutViewController.swift in Sources */,
 				9AC2D0841BE262CA004D594E /* ListTableViewController.swift in Sources */,
