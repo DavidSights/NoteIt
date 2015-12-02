@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="eao-IQ-Vef">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="eao-IQ-Vef">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -36,15 +36,66 @@
                                     <action selector="cancelButtonPressed:" destination="0Gx-xw-E7S" eventType="touchUpInside" id="ZvY-In-6Lz"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rIq-qq-jfm">
+                                <rect key="frame" x="247" y="285" width="106" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="106" id="4cg-qa-363"/>
+                                    <constraint firstAttribute="height" constant="30" id="yd8-tO-TeC"/>
+                                </constraints>
+                                <state key="normal" title="Cancel Recording"/>
+                                <connections>
+                                    <action selector="recordToggled:" destination="0Gx-xw-E7S" eventType="touchUpInside" id="s1E-0T-hrH"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Recording Status" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e9E-Dk-S9U">
+                                <rect key="frame" x="20" y="28" width="560" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="nN7-ug-W5t"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Result" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iCR-V0-8Xz">
+                                <rect key="frame" x="20" y="69" width="560" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="EKb-ZG-D6H"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RVU-63-pgT">
+                                <rect key="frame" x="8" y="98" width="584" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="uwJ-u9-JNH" secondAttribute="trailing" id="2jm-zF-Lu1"/>
+                            <constraint firstItem="rIq-qq-jfm" firstAttribute="centerY" secondItem="nWA-B8-igW" secondAttribute="centerY" id="5lN-2l-8wd"/>
+                            <constraint firstItem="iCR-V0-8Xz" firstAttribute="leading" secondItem="nWA-B8-igW" secondAttribute="leadingMargin" id="7mr-mf-IcV"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="iCR-V0-8Xz" secondAttribute="trailing" id="CLb-nh-DME"/>
+                            <constraint firstItem="iCR-V0-8Xz" firstAttribute="top" secondItem="e9E-Dk-S9U" secondAttribute="bottom" constant="20" id="Gdf-98-GzH"/>
+                            <constraint firstItem="e9E-Dk-S9U" firstAttribute="leading" secondItem="nWA-B8-igW" secondAttribute="leadingMargin" id="IXn-8H-ppS"/>
+                            <constraint firstItem="e9E-Dk-S9U" firstAttribute="top" secondItem="3QI-yA-lBo" secondAttribute="bottom" constant="8" id="Jko-FI-fF1"/>
                             <constraint firstItem="Jg9-n3-M7j" firstAttribute="top" secondItem="uwJ-u9-JNH" secondAttribute="bottom" constant="25" id="LOh-zy-uyH"/>
+                            <constraint firstItem="RVU-63-pgT" firstAttribute="leading" secondItem="nWA-B8-igW" secondAttribute="leading" constant="8" id="NfM-nk-EIK"/>
+                            <constraint firstAttribute="trailing" secondItem="RVU-63-pgT" secondAttribute="trailing" constant="8" id="OSz-Gf-cyp"/>
                             <constraint firstItem="uwJ-u9-JNH" firstAttribute="centerX" secondItem="nWA-B8-igW" secondAttribute="centerX" id="PvN-L4-cL8"/>
                             <constraint firstItem="uwJ-u9-JNH" firstAttribute="leading" secondItem="nWA-B8-igW" secondAttribute="leadingMargin" id="Sdf-ud-iNm"/>
+                            <constraint firstItem="rIq-qq-jfm" firstAttribute="centerX" secondItem="nWA-B8-igW" secondAttribute="centerX" id="mBc-nQ-lMQ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="e9E-Dk-S9U" secondAttribute="trailing" id="wA1-pf-LSR"/>
+                            <constraint firstItem="RVU-63-pgT" firstAttribute="top" secondItem="iCR-V0-8Xz" secondAttribute="bottom" constant="8" id="xVm-DP-ele"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="recordToggle" destination="rIq-qq-jfm" id="jye-ng-2mN"/>
+                        <outlet property="recordingStatusLabel" destination="e9E-Dk-S9U" id="mbT-vm-XAd"/>
+                        <outlet property="resultLabel" destination="iCR-V0-8Xz" id="SdS-LD-Q7I"/>
+                        <outlet property="textField" destination="RVU-63-pgT" id="zaL-h9-Oja"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Iu2-Gh-B5N" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
