@@ -19,6 +19,12 @@ class WriteNoteViewController: UIViewController {
         super.viewDidLoad()
         self.title = "Write a Note"
         self.textView.delegate = self;
+
+        guard let navBar = self.navigationController?.navigationBar else {
+            return
+        }
+
+        navBar.NITColorize()
     }
 
     override func viewDidAppear(animated: Bool) {

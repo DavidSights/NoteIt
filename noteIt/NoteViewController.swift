@@ -19,6 +19,8 @@ class NoteViewController: UIViewController {
 
     var note: Note?
 
+    // MARK: - View Life Cycle
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -36,6 +38,14 @@ class NoteViewController: UIViewController {
         VOKCoreDataManager.sharedInstance().saveMainContext()
     }
 
+    // MARK: - Buttons
+
+    @IBAction func editButtonPressed(sender: AnyObject) {
+        self.updateEditButtonAndTextView()
+    }
+
+    // MARK: - Helper Methods
+
     private func updateEditButtonAndTextView() {
 
         guard let editButton = self.navigationItem.rightBarButtonItem else {
@@ -52,10 +62,10 @@ class NoteViewController: UIViewController {
         }
     }
 
-    @IBAction func editButtonPressed(sender: AnyObject) {
-        self.updateEditButtonAndTextView()
-    }
+
 }
+
+// MARK: - TextView Delegate
 
 extension NoteViewController: UITextViewDelegate {
 

@@ -33,6 +33,7 @@ class NotesDataSource: VOKFetchedResultsDataSource {
         }
 
         cell.textLabel?.text = note.text
+        cell.textLabel?.textColor = UIColor.whiteColor()
         return cell
     }
 }

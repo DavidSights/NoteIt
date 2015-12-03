@@ -11,6 +11,7 @@
 		6EF8D7F29F9348C09B9D0EC6 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B32A04747749171C3F5D1C2 /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		8AC4C5045DAB39771FD76901 /* Pods_noteItUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F30DF909F7F27D7370FDFBFA /* Pods_noteItUITests.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		9A0BAB501C10919D0092CFC5 /* MyNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A0BAB4F1C10919D0092CFC5 /* MyNavigationController.swift */; };
+		9A0BAB521C10B2830092CFC5 /* Categories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A0BAB511C10B2830092CFC5 /* Categories.swift */; };
 		9A2430E51BDFC4A20056E94C /* remove-key.sh in Resources */ = {isa = PBXBuildFile; fileRef = 9A2430E41BDFC4A20056E94C /* remove-key.sh */; };
 		9A2430EB1BDFC4A20056E94C /* noteIt-Non-UI-Tests.xcscheme in Resources */ = {isa = PBXBuildFile; fileRef = 9A2430EA1BDFC4A20056E94C /* noteIt-Non-UI-Tests.xcscheme */; };
 		9A2430ED1BDFC4A20056E94C /* noteIt.xcscheme in Resources */ = {isa = PBXBuildFile; fileRef = 9A2430EC1BDFC4A20056E94C /* noteIt.xcscheme */; };
@@ -78,6 +79,7 @@
 		8070B47C01EB4403E3F29F9B /* Pods-noteItTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-noteItTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-noteItTests/Pods-noteItTests.release.xcconfig"; sourceTree = "<group>"; };
 		87FD7CFD94373039439F5430 /* Pods_noteItTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_noteItTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A0BAB4F1C10919D0092CFC5 /* MyNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyNavigationController.swift; sourceTree = "<group>"; };
+		9A0BAB511C10B2830092CFC5 /* Categories.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Categories.swift; sourceTree = "<group>"; };
 		9A2430D01BDFC4A20056E94C /* noteIt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = noteIt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A2430D41BDFC4A20056E94C /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; name = .gitkeep; path = Controls/.gitkeep; sourceTree = "<group>"; };
 		9A2430D61BDFC4A20056E94C /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; name = .gitkeep; path = "Data Sources/.gitkeep"; sourceTree = "<group>"; };
@@ -347,6 +349,7 @@
 		9A2430FA1BDFC4A20056E94C /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				9A0BAB511C10B2830092CFC5 /* Categories.swift */,
 				9A2430FB1BDFC4A20056E94C /* DLog.swift */,
 			);
 			name = Utilities;
@@ -729,6 +732,7 @@
 				9A2431001BDFC4A20056E94C /* noteIt.xcdatamodeld in Sources */,
 				9A2430F21BDFC4A20056E94C /* main.swift in Sources */,
 				9AC2D0931BE2AD2E004D594E /* User+CoreDataProperties.swift in Sources */,
+				9A0BAB521C10B2830092CFC5 /* Categories.swift in Sources */,
 				9AC2D0981BE2AD97004D594E /* SignInViewController.swift in Sources */,
 				9A2431021BDFC4A20056E94C /* CoreDataUtility.swift in Sources */,
 				9AF6572D1BEC13160034705B /* NITConstants.swift in Sources */,

@@ -17,8 +17,12 @@ class ListTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
         self.title = "Notes"
+
         self.dataSource = NotesDataSource(tableView: self.tableView)
+
+        self.tableView.NITColorize()
     }
 
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {

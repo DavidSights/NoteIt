@@ -12,12 +12,7 @@ class MyNavigationController: UINavigationController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.whiteColor()]
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        self.navigationBar.NITColorize()
     }
 
     override func preferredStatusBarStyle() -> UIStatusBarStyle {

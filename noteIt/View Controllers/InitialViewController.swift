@@ -12,14 +12,33 @@ private let SignInSegue = "SignInSegue"
 
 class InitialViewController : UIViewController {
 
+    @IBOutlet weak var dictateButton: UIButton!
+    @IBOutlet weak var writeButton: UIButton!
+    @IBOutlet weak var viewButton: UIButton!
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
         self.title = "Note It"
-        self.navigationController?.navigationBar.barTintColor = UIColor(red: 0/255, green: 2/255, blue: 45/255, alpha: 1)
+
+        let buttons = [
+            self.dictateButton,
+            self.writeButton,
+            self.viewButton,
+        ]
+
+        for button in buttons {
+            button.roundCornders()
+        }
+
+        guard let navBar = self.navigationController?.navigationBar else {
+            fatalError("Error retrieving navigation controller.")
+        }
+
+        navBar.NITColorize()
     }
 
-    // TODO: Use to ensure a user is logged in.
+    // TODO: Use this function after users have been set up.
     private func presentSignInIfUserNotLoggedIn() {
         if NSUserDefaults.standardUserDefaults().objectForKey("username") == nil {
             self.performSegueWithIdentifier(SignInSegue, sender: self)
