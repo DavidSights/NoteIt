@@ -18,6 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     func setupSpeechKitConnection() {
+
         SpeechKit.setupWithID("NMDPTRIAL_davidseitzjr_gmail_com20151116162553",
             host: "sandbox.nmdp.nuancemobility.net",
             port: 443,

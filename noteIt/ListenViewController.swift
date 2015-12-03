@@ -24,8 +24,6 @@ class ListenViewController: UIViewController {
 
     override func viewDidLoad() {
 
-        SpeechKit.setupWithID("NMDPTRIAL_davidseitzjr_gmail_com20151116162553", host: "sandbox.nmdp.nuancemobility.net", port: 443, useSSL: false, certSummary: nil, certData: nil, delegate: nil)
-
         self.appDelegate.setupSpeechKitConnection()
         self.textField.returnKeyType = UIReturnKeyType.Search
 
