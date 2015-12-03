@@ -10,6 +10,8 @@
 		039B00798D8B27349DB8B4B7 /* Pods_noteItTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87FD7CFD94373039439F5430 /* Pods_noteItTests.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		6EF8D7F29F9348C09B9D0EC6 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B32A04747749171C3F5D1C2 /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		8AC4C5045DAB39771FD76901 /* Pods_noteItUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F30DF909F7F27D7370FDFBFA /* Pods_noteItUITests.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		9A0BAB501C10919D0092CFC5 /* MyNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A0BAB4F1C10919D0092CFC5 /* MyNavigationController.swift */; };
+		9A0BAB521C10B2830092CFC5 /* Categories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A0BAB511C10B2830092CFC5 /* Categories.swift */; };
 		9A2430E51BDFC4A20056E94C /* remove-key.sh in Resources */ = {isa = PBXBuildFile; fileRef = 9A2430E41BDFC4A20056E94C /* remove-key.sh */; };
 		9A2430EB1BDFC4A20056E94C /* noteIt-Non-UI-Tests.xcscheme in Resources */ = {isa = PBXBuildFile; fileRef = 9A2430EA1BDFC4A20056E94C /* noteIt-Non-UI-Tests.xcscheme */; };
 		9A2430ED1BDFC4A20056E94C /* noteIt.xcscheme in Resources */ = {isa = PBXBuildFile; fileRef = 9A2430EC1BDFC4A20056E94C /* noteIt.xcscheme */; };
@@ -27,18 +29,30 @@
 		9A2431151BDFC4A20056E94C /* noteItTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2431141BDFC4A20056E94C /* noteItTests.swift */; };
 		9A2431201BDFC4A20056E94C /* noteItUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A24311F1BDFC4A20056E94C /* noteItUITests.swift */; };
 		9A2431221BDFC4A20056E94C /* XCTestCase+KIFTester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2431211BDFC4A20056E94C /* XCTestCase+KIFTester.swift */; };
-		9A337E2C1BE7C9F800984C15 /* NotesDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A337E2B1BE7C9F800984C15 /* NotesDataSource.swift */; settings = {ASSET_TAGS = (); }; };
-		9AC2D0841BE262CA004D594E /* ListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AC2D0831BE262CA004D594E /* ListTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		9AC2D0861BE27390004D594E /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AC2D0851BE27390004D594E /* AboutViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		9AC2D0881BE27432004D594E /* HelpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AC2D0871BE27432004D594E /* HelpViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		9AC2D08A1BE27482004D594E /* NoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AC2D0891BE27482004D594E /* NoteViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		9AC2D08C1BE275B0004D594E /* ListenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AC2D08B1BE275B0004D594E /* ListenViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		9AC2D08E1BE27B6C004D594E /* WriteNoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AC2D08D1BE27B6C004D594E /* WriteNoteViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		9AC2D0931BE2AD2E004D594E /* User+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AC2D08F1BE2AD2E004D594E /* User+CoreDataProperties.swift */; settings = {ASSET_TAGS = (); }; };
-		9AC2D0941BE2AD2E004D594E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AC2D0901BE2AD2E004D594E /* User.swift */; settings = {ASSET_TAGS = (); }; };
-		9AC2D0951BE2AD2E004D594E /* Note+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AC2D0911BE2AD2E004D594E /* Note+CoreDataProperties.swift */; settings = {ASSET_TAGS = (); }; };
-		9AC2D0961BE2AD2E004D594E /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AC2D0921BE2AD2E004D594E /* Note.swift */; settings = {ASSET_TAGS = (); }; };
-		9AC2D0981BE2AD97004D594E /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AC2D0971BE2AD97004D594E /* SignInViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		9A337E2C1BE7C9F800984C15 /* NotesDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A337E2B1BE7C9F800984C15 /* NotesDataSource.swift */; };
+		9A6018611BFBCA53009CC3FD /* SpeechKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A6018601BFBCA53009CC3FD /* SpeechKit.framework */; };
+		9A6018681BFBDDD9009CC3FD /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A6018661BFBDDD9009CC3FD /* AVFoundation.framework */; };
+		9A6018691BFBDDD9009CC3FD /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A6018671BFBDDD9009CC3FD /* AVKit.framework */; };
+		9A60186D1BFBDE74009CC3FD /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A60186C1BFBDE74009CC3FD /* CoreAudio.framework */; };
+		9A60186F1BFBDE8A009CC3FD /* CoreAudioKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A60186E1BFBDE8A009CC3FD /* CoreAudioKit.framework */; };
+		9A6018721BFBDEB7009CC3FD /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A6018711BFBDEB7009CC3FD /* AudioToolbox.framework */; };
+		9A6018741BFBDF08009CC3FD /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A6018731BFBDF08009CC3FD /* SystemConfiguration.framework */; };
+		9AAB277F1C0F5E98002A74FF /* SpeechKitApplicationID.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AAB277E1C0F5E98002A74FF /* SpeechKitApplicationID.m */; };
+		9AAB27831C0F9028002A74FF /* earcon_cancel.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9AAB27801C0F9028002A74FF /* earcon_cancel.wav */; };
+		9AAB27841C0F9028002A74FF /* earcon_done_listening.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9AAB27811C0F9028002A74FF /* earcon_done_listening.wav */; };
+		9AAB27851C0F9028002A74FF /* earcon_listening.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9AAB27821C0F9028002A74FF /* earcon_listening.wav */; };
+		9AC2D0841BE262CA004D594E /* ListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AC2D0831BE262CA004D594E /* ListTableViewController.swift */; };
+		9AC2D0861BE27390004D594E /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AC2D0851BE27390004D594E /* AboutViewController.swift */; };
+		9AC2D0881BE27432004D594E /* HelpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AC2D0871BE27432004D594E /* HelpViewController.swift */; };
+		9AC2D08A1BE27482004D594E /* NoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AC2D0891BE27482004D594E /* NoteViewController.swift */; };
+		9AC2D08C1BE275B0004D594E /* ListenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AC2D08B1BE275B0004D594E /* ListenViewController.swift */; };
+		9AC2D08E1BE27B6C004D594E /* WriteNoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AC2D08D1BE27B6C004D594E /* WriteNoteViewController.swift */; };
+		9AC2D0931BE2AD2E004D594E /* User+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AC2D08F1BE2AD2E004D594E /* User+CoreDataProperties.swift */; };
+		9AC2D0941BE2AD2E004D594E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AC2D0901BE2AD2E004D594E /* User.swift */; };
+		9AC2D0951BE2AD2E004D594E /* Note+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AC2D0911BE2AD2E004D594E /* Note+CoreDataProperties.swift */; };
+		9AC2D0961BE2AD2E004D594E /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AC2D0921BE2AD2E004D594E /* Note.swift */; };
+		9AC2D0981BE2AD97004D594E /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AC2D0971BE2AD97004D594E /* SignInViewController.swift */; };
+		9AF6572D1BEC13160034705B /* NITConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AF6572C1BEC13160034705B /* NITConstants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +78,8 @@
 		6B32A04747749171C3F5D1C2 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8070B47C01EB4403E3F29F9B /* Pods-noteItTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-noteItTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-noteItTests/Pods-noteItTests.release.xcconfig"; sourceTree = "<group>"; };
 		87FD7CFD94373039439F5430 /* Pods_noteItTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_noteItTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A0BAB4F1C10919D0092CFC5 /* MyNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyNavigationController.swift; sourceTree = "<group>"; };
+		9A0BAB511C10B2830092CFC5 /* Categories.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Categories.swift; sourceTree = "<group>"; };
 		9A2430D01BDFC4A20056E94C /* noteIt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = noteIt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A2430D41BDFC4A20056E94C /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; name = .gitkeep; path = Controls/.gitkeep; sourceTree = "<group>"; };
 		9A2430D61BDFC4A20056E94C /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; name = .gitkeep; path = "Data Sources/.gitkeep"; sourceTree = "<group>"; };
@@ -102,6 +118,19 @@
 		9A2431211BDFC4A20056E94C /* XCTestCase+KIFTester.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+KIFTester.swift"; sourceTree = "<group>"; };
 		9A2431231BDFC4A20056E94C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9A337E2B1BE7C9F800984C15 /* NotesDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotesDataSource.swift; sourceTree = "<group>"; };
+		9A6018601BFBCA53009CC3FD /* SpeechKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpeechKit.framework; path = noteIt/SpeechKit.framework; sourceTree = "<group>"; };
+		9A6018621BFBDCA5009CC3FD /* noteIt-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "noteIt-Bridging-Header.h"; sourceTree = "<group>"; };
+		9A6018661BFBDDD9009CC3FD /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		9A6018671BFBDDD9009CC3FD /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
+		9A60186A1BFBDE21009CC3FD /* AudioUnit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioUnit.framework; path = System/Library/Frameworks/AudioUnit.framework; sourceTree = SDKROOT; };
+		9A60186C1BFBDE74009CC3FD /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		9A60186E1BFBDE8A009CC3FD /* CoreAudioKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudioKit.framework; path = System/Library/Frameworks/CoreAudioKit.framework; sourceTree = SDKROOT; };
+		9A6018711BFBDEB7009CC3FD /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		9A6018731BFBDF08009CC3FD /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		9AAB277E1C0F5E98002A74FF /* SpeechKitApplicationID.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpeechKitApplicationID.m; sourceTree = "<group>"; };
+		9AAB27801C0F9028002A74FF /* earcon_cancel.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = earcon_cancel.wav; path = ../../../../../Downloads/DragonMobileSDK_1.4.21/DragonMobileRecognizer/earcon_cancel.wav; sourceTree = "<group>"; };
+		9AAB27811C0F9028002A74FF /* earcon_done_listening.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = earcon_done_listening.wav; path = ../../../../../Downloads/DragonMobileSDK_1.4.21/DragonMobileRecognizer/earcon_done_listening.wav; sourceTree = "<group>"; };
+		9AAB27821C0F9028002A74FF /* earcon_listening.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = earcon_listening.wav; path = ../../../../../Downloads/DragonMobileSDK_1.4.21/DragonMobileRecognizer/earcon_listening.wav; sourceTree = "<group>"; };
 		9AC2D0831BE262CA004D594E /* ListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListTableViewController.swift; sourceTree = "<group>"; };
 		9AC2D0851BE27390004D594E /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		9AC2D0871BE27432004D594E /* HelpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelpViewController.swift; sourceTree = "<group>"; };
@@ -113,6 +142,7 @@
 		9AC2D0911BE2AD2E004D594E /* Note+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Note+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		9AC2D0921BE2AD2E004D594E /* Note.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
 		9AC2D0971BE2AD97004D594E /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		9AF6572C1BEC13160034705B /* NITConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NITConstants.swift; sourceTree = "<group>"; };
 		ACFFB439F6D3C479E60258AE /* Pods-noteItUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-noteItUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-noteItUITests/Pods-noteItUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		B9B41CB0A726CF096DF7C4C4 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		EE3BD213BC9F04389249E756 /* Pods-noteItUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-noteItUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-noteItUITests/Pods-noteItUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -124,7 +154,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A6018741BFBDF08009CC3FD /* SystemConfiguration.framework in Frameworks */,
+				9A6018721BFBDEB7009CC3FD /* AudioToolbox.framework in Frameworks */,
+				9A60186F1BFBDE8A009CC3FD /* CoreAudioKit.framework in Frameworks */,
+				9A60186D1BFBDE74009CC3FD /* CoreAudio.framework in Frameworks */,
+				9A6018681BFBDDD9009CC3FD /* AVFoundation.framework in Frameworks */,
+				9A6018691BFBDDD9009CC3FD /* AVKit.framework in Frameworks */,
 				6EF8D7F29F9348C09B9D0EC6 /* Pods.framework in Frameworks */,
+				9A6018611BFBCA53009CC3FD /* SpeechKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -150,6 +187,14 @@
 		40A920BC7302D5C11737F51E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9A6018731BFBDF08009CC3FD /* SystemConfiguration.framework */,
+				9A6018711BFBDEB7009CC3FD /* AudioToolbox.framework */,
+				9A60186E1BFBDE8A009CC3FD /* CoreAudioKit.framework */,
+				9A60186C1BFBDE74009CC3FD /* CoreAudio.framework */,
+				9A60186A1BFBDE21009CC3FD /* AudioUnit.framework */,
+				9A6018661BFBDDD9009CC3FD /* AVFoundation.framework */,
+				9A6018671BFBDDD9009CC3FD /* AVKit.framework */,
+				9A6018601BFBCA53009CC3FD /* SpeechKit.framework */,
 				6B32A04747749171C3F5D1C2 /* Pods.framework */,
 				87FD7CFD94373039439F5430 /* Pods_noteItTests.framework */,
 				F30DF909F7F27D7370FDFBFA /* Pods_noteItUITests.framework */,
@@ -182,7 +227,9 @@
 		9A2430D21BDFC4A20056E94C /* noteIt */ = {
 			isa = PBXGroup;
 			children = (
+				9AAB277E1C0F5E98002A74FF /* SpeechKitApplicationID.m */,
 				9A2430F31BDFC4A20056E94C /* AppDelegate.swift */,
+				9AF6572C1BEC13160034705B /* NITConstants.swift */,
 				9A2430F51BDFC4A20056E94C /* TestingAppDelegate.swift */,
 				9A2431031BDFC4A20056E94C /* Images.xcassets */,
 				9A2431051BDFC4A20056E94C /* Main-noteIt.storyboard */,
@@ -198,6 +245,7 @@
 				9A2430FA1BDFC4A20056E94C /* Utilities */,
 				9A2430FD1BDFC4A20056E94C /* CoreDataAndModels */,
 				9A2430E91BDFC4A20056E94C /* Supporting Files */,
+				9A6018621BFBDCA5009CC3FD /* noteIt-Bridging-Header.h */,
 			);
 			path = noteIt;
 			sourceTree = "<group>";
@@ -264,6 +312,9 @@
 		9A2430E91BDFC4A20056E94C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				9AAB27801C0F9028002A74FF /* earcon_cancel.wav */,
+				9AAB27811C0F9028002A74FF /* earcon_done_listening.wav */,
+				9AAB27821C0F9028002A74FF /* earcon_listening.wav */,
 				9A2430EA1BDFC4A20056E94C /* noteIt-Non-UI-Tests.xcscheme */,
 				9A2430EC1BDFC4A20056E94C /* noteIt.xcscheme */,
 				9A2430F11BDFC4A20056E94C /* main.swift */,
@@ -282,6 +333,7 @@
 		9A2430F71BDFC4A20056E94C /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				9A0BAB4F1C10919D0092CFC5 /* MyNavigationController.swift */,
 				9AC2D0971BE2AD97004D594E /* SignInViewController.swift */,
 				9A2430F81BDFC4A20056E94C /* InitialViewController.swift */,
 				9AC2D08D1BE27B6C004D594E /* WriteNoteViewController.swift */,
@@ -297,6 +349,7 @@
 		9A2430FA1BDFC4A20056E94C /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				9A0BAB511C10B2830092CFC5 /* Categories.swift */,
 				9A2430FB1BDFC4A20056E94C /* DLog.swift */,
 			);
 			name = Utilities;
@@ -420,7 +473,7 @@
 		9A2430C61BDFC4A20056E94C /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0700;
+				LastSwiftUpdateCheck = 0710;
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = Vokal;
 				TargetAttributes = {
@@ -464,6 +517,9 @@
 			files = (
 				9A2431071BDFC4A20056E94C /* Main-noteIt.storyboard in Resources */,
 				9A2430ED1BDFC4A20056E94C /* noteIt.xcscheme in Resources */,
+				9AAB27851C0F9028002A74FF /* earcon_listening.wav in Resources */,
+				9AAB27831C0F9028002A74FF /* earcon_cancel.wav in Resources */,
+				9AAB27841C0F9028002A74FF /* earcon_done_listening.wav in Resources */,
 				9A2431041BDFC4A20056E94C /* Images.xcassets in Resources */,
 				9A24310A1BDFC4A20056E94C /* LaunchScreen.xib in Resources */,
 				9A2430EB1BDFC4A20056E94C /* noteIt-Non-UI-Tests.xcscheme in Resources */,
@@ -665,17 +721,21 @@
 				9AC2D08E1BE27B6C004D594E /* WriteNoteViewController.swift in Sources */,
 				9A2430F41BDFC4A20056E94C /* AppDelegate.swift in Sources */,
 				9AC2D0961BE2AD2E004D594E /* Note.swift in Sources */,
+				9AAB277F1C0F5E98002A74FF /* SpeechKitApplicationID.m in Sources */,
 				9AC2D08A1BE27482004D594E /* NoteViewController.swift in Sources */,
 				9AC2D0861BE27390004D594E /* AboutViewController.swift in Sources */,
 				9AC2D0841BE262CA004D594E /* ListTableViewController.swift in Sources */,
 				9A2430F91BDFC4A20056E94C /* InitialViewController.swift in Sources */,
+				9A0BAB501C10919D0092CFC5 /* MyNavigationController.swift in Sources */,
 				9AC2D0941BE2AD2E004D594E /* User.swift in Sources */,
 				9AC2D0951BE2AD2E004D594E /* Note+CoreDataProperties.swift in Sources */,
 				9A2431001BDFC4A20056E94C /* noteIt.xcdatamodeld in Sources */,
 				9A2430F21BDFC4A20056E94C /* main.swift in Sources */,
 				9AC2D0931BE2AD2E004D594E /* User+CoreDataProperties.swift in Sources */,
+				9A0BAB521C10B2830092CFC5 /* Categories.swift in Sources */,
 				9AC2D0981BE2AD97004D594E /* SignInViewController.swift in Sources */,
 				9A2431021BDFC4A20056E94C /* CoreDataUtility.swift in Sources */,
+				9AF6572D1BEC13160034705B /* NITConstants.swift in Sources */,
 				9AC2D0881BE27432004D594E /* HelpViewController.swift in Sources */,
 				9AC2D08C1BE275B0004D594E /* ListenViewController.swift in Sources */,
 			);
@@ -823,10 +883,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/noteIt",
+				);
 				INFOPLIST_FILE = noteIt/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Vokal.noteIt;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "noteIt/noteIt-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -837,10 +902,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/noteIt",
+				);
 				INFOPLIST_FILE = noteIt/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Vokal.noteIt;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "noteIt/noteIt-Bridging-Header.h";
 			};
 			name = Release;
 		};

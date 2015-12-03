@@ -19,6 +19,8 @@ class NoteViewController: UIViewController {
 
     var note: Note?
 
+    // MARK: - View Life Cycle
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -30,6 +32,19 @@ class NoteViewController: UIViewController {
 
         textView.text = note.text
     }
+
+    override func viewDidDisappear(animated: Bool) {
+        super.viewDidDisappear(animated)
+        VOKCoreDataManager.sharedInstance().saveMainContext()
+    }
+
+    // MARK: - Buttons
+
+    @IBAction func editButtonPressed(sender: AnyObject) {
+        self.updateEditButtonAndTextView()
+    }
+
+    // MARK: - Helper Methods
 
     private func updateEditButtonAndTextView() {
 
@@ -47,16 +62,14 @@ class NoteViewController: UIViewController {
         }
     }
 
-    @IBAction func editButtonPressed(sender: AnyObject) {
-        self.updateEditButtonAndTextView()
-    }
+
 }
+
+// MARK: - TextView Delegate
 
 extension NoteViewController: UITextViewDelegate {
 
-    // TODO: Move saving to when back button is pressed and/or view is put into the background.
     func textViewDidChange(textView: UITextView) {
         self.note?.text = self.textView.text
-        VOKCoreDataManager.sharedInstance().saveMainContext()
     }
 }

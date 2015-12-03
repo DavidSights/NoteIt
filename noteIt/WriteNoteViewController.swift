@@ -19,6 +19,12 @@ class WriteNoteViewController: UIViewController {
         super.viewDidLoad()
         self.title = "Write a Note"
         self.textView.delegate = self;
+
+        guard let navBar = self.navigationController?.navigationBar else {
+            return
+        }
+
+        navBar.NITColorize()
     }
 
     override func viewDidAppear(animated: Bool) {
@@ -26,8 +32,9 @@ class WriteNoteViewController: UIViewController {
         self.textView.becomeFirstResponder()
     }
 
-    @IBAction func cancelButtonPressed(sender: UIBarButtonItem) {
+    @IBAction func closeButtonPressed(sender: UIBarButtonItem) {
         self.navigationController?.dismissViewControllerAnimated(true, completion: nil)
+        VOKCoreDataManager.sharedInstance().saveMainContext()
     }
 }
 
@@ -35,6 +42,5 @@ extension WriteNoteViewController: UITextViewDelegate {
 
     func textViewDidChange(textView: UITextView) {
         self.note.text = self.textView.text
-        VOKCoreDataManager.sharedInstance().saveMainContext()
     }
 }

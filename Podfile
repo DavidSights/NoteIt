@@ -1,4 +1,3 @@
-source 'https://github.com/vokal/PrivatePodspecRepo-iOS.git'
 source 'https://github.com/CocoaPods/Specs.git'
 
 platform :ios, '9.0'
