@@ -12,7 +12,6 @@
 		8AC4C5045DAB39771FD76901 /* Pods_noteItUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F30DF909F7F27D7370FDFBFA /* Pods_noteItUITests.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		9A0BAB501C10919D0092CFC5 /* MyNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A0BAB4F1C10919D0092CFC5 /* MyNavigationController.swift */; };
 		9A0BAB521C10B2830092CFC5 /* Categories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A0BAB511C10B2830092CFC5 /* Categories.swift */; };
-		9A2430E51BDFC4A20056E94C /* remove-key.sh in Resources */ = {isa = PBXBuildFile; fileRef = 9A2430E41BDFC4A20056E94C /* remove-key.sh */; };
 		9A2430EB1BDFC4A20056E94C /* noteIt-Non-UI-Tests.xcscheme in Resources */ = {isa = PBXBuildFile; fileRef = 9A2430EA1BDFC4A20056E94C /* noteIt-Non-UI-Tests.xcscheme */; };
 		9A2430ED1BDFC4A20056E94C /* noteIt.xcscheme in Resources */ = {isa = PBXBuildFile; fileRef = 9A2430EC1BDFC4A20056E94C /* noteIt.xcscheme */; };
 		9A2430F01BDFC4A20056E94C /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = 9A2430EF1BDFC4A20056E94C /* .gitkeep */; };
@@ -523,7 +522,6 @@
 				9A2431041BDFC4A20056E94C /* Images.xcassets in Resources */,
 				9A24310A1BDFC4A20056E94C /* LaunchScreen.xib in Resources */,
 				9A2430EB1BDFC4A20056E94C /* noteIt-Non-UI-Tests.xcscheme in Resources */,
-				9A2430E51BDFC4A20056E94C /* remove-key.sh in Resources */,
 				9A2430F01BDFC4A20056E94C /* .gitkeep in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
